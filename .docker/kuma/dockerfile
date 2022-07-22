@@ -8,6 +8,7 @@ RUN npm ci --production && \
     chmod +x /app/extra/entrypoint.sh
 
 # PATCH
+RUN node extra/download-dist.js
 RUN apt-get update && apt-get install dos2unix
 RUN dos2unix /app/extra/entrypoint.sh
 RUN npm install dd-trace --save
