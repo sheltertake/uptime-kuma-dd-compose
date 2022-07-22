@@ -1,0 +1,3 @@
+[submodule "uptime-kuma"]
+	path = uptime-kuma
+	url = https://github.com/louislam/uptime-kuma.git
